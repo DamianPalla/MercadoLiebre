@@ -1,0 +1,426 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 12px;
+}
+
+/*  HEADER  */
+
+header {
+    width: 100%;
+    background-color: #EAC926;
+    padding-bottom: 20px
+}
+
+.logo-y-barra-busqueda{
+    display: flex;
+    width: 100%;
+}
+
+.div-barra-busqueda{
+    width:100%;
+    display: flex;
+}
+.barra-busqueda{
+    width: 80%;
+    height: 2.5vh;
+    border-radius: 4px;
+    border: white;
+    align-self: center;
+    margin-left: 2vw
+}
+
+.lupa-busqueda{
+    align-self: center;
+    margin-left: 5px;
+    font-size: 15px;
+    padding: 1px 1px 1px 1px
+}
+
+.div-imagenML{
+    width: 100%;
+}
+.imagenML{
+    width: 100%;
+}
+
+
+.imagenML-fixed {
+    position: fixed;
+    width: 15vw;
+    margin-left: 50vw;
+}
+
+
+.navbar-general {
+    display: none;
+}
+
+.navbar-cuenta {
+    display: none;
+}
+
+.mensaje-bienvenida {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.navegacion-general-y-cuenta{
+    margin-top: 25px;
+    display:none;
+}
+
+.navbar-general{
+    display: none;
+}
+
+.navbar-cuenta{
+    display: none;
+}
+
+
+.menu-hamburguesa {
+    color: white;
+    font-size: 2em;
+    background-color: #1259c3;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hambur {
+    text-align: center;
+}
+
+/*  MAIN  */
+
+main {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.banner {
+    width: 100%;
+}
+
+.titulo-ultima-visita {
+    font-size: 24px;
+    text-align: left;
+    margin: 1.2vw
+}
+
+.titulo-ofertas {
+    font-size: 24px;
+    text-align: left;
+    margin: 1.2vw
+}
+
+.contenedor-productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.producto:hover{
+    box-shadow: rgba(100,100,100) 0px 0px 10px;
+    transition: all 0.5s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease;
+
+}
+
+.imagenProductos {
+    width: 85%;
+}
+
+.descripcion-producto {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    text-align: left;
+    position: relative;
+}
+
+.precio-dto {
+    display: flex;
+}
+
+
+.precio {
+    font-size: 18px;
+    width: 30%
+}
+
+.dto {
+    font-size: 16px;
+    width: 70%;
+    color: #39b54a;
+}
+
+.nombre-producto{
+    font-size: 16px;
+    display: none;
+    transition: all 0.5s;
+}
+
+.producto:hover .nombre-producto {
+    transition: all 0.5s;
+    display: initial;
+}
+
+.logo-envio {
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 0.5s;     
+    animation-timing-function: ease
+}
+
+.logo-envio:hover {
+    transform: rotate(-90deg);
+    transition: all 0.8s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease;
+}
+
+
+
+/*  FOOTER  */
+
+footer {
+    background-color: white;
+    text-align: center;
+}
+
+.icono-footer {
+    font-size: 3em;
+    color: #1259c3;
+    margin: 15px 0 10px 0
+}
+
+.copyright{
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+/*  TABLETS  */
+
+@media (min-width: 361px) {
+
+    .div-imagenML{
+        width: 75%;
+    }
+
+    .imagenML{
+        width: 100%;
+    }
+
+    .imagenML-fixed {
+        position:fixed ;
+        width: 15vw;
+        margin-left: 40vw;
+    }
+
+    .barra-busqueda{
+        width: 50%;
+        height: 2.5vh;
+        border-radius: 4px;
+        border: white;
+        align-self: center;
+    }
+
+    .mensaje-bienvenida {
+        text-align: center;
+        font-size: 1.4em;
+    }
+
+    .navegacion-general-y-cuenta{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .menu-hamburguesa {
+        display:none
+    }
+
+    .nombre-producto {
+        
+    }
+
+    .navbar-general {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-cuenta {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hipervinculo{
+        padding: 0 20px 0 20px ; 
+        font-size: 17px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .hambur {
+        display: none;
+    }
+
+    .producto {
+        width:45%;
+        transition: all 0.5s
+    }
+
+    .producto:hover{
+        box-shadow: rgba(100,100,100) 0px 0px 10px;
+        transition: all 0.5s;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease;
+    
+    }
+
+    .copyright{
+        margin-top: 30px;
+        margin-left: 5%;
+        margin-bottom: 10px;
+    }
+
+}
+
+/*  ESCRITORIO  */
+
+@media (min-width: 769px) {
+
+    .div-imagenML{
+        width: 50%;
+    }
+
+    .imagenML{
+        width: 100%;
+    }
+
+    .imagenML-fixed {
+        position: fixed;
+        width: 15vw;
+        margin-left: 50vw;
+    }
+
+    .barra-busqueda{
+        width: 50%;
+        height: 2.5vh;
+        border-radius: 4px;
+        border: white;
+        align-self: center;
+    }
+
+    .mensaje-bienvenida {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .hambur {
+        display:none
+    }
+    .navegacion-general-y-cuenta{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nombre-producto {
+        
+    }
+
+    .navbar-general {
+        display: flex;
+        display: initial;
+    }
+
+    .navbar-cuenta {
+        display: initial;
+    }
+
+    .hipervinculo{
+        padding: 0 20px 0 20px ; 
+        font-size: 17px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .menu-hamburguesa {
+        display: none;
+    }
+
+    .producto {
+        width:22%;
+        transition: all 0.5s
+    }
+
+    .producto:hover{
+        box-shadow: rgba(100,100,100) 0px 0px 10px;
+        transition: all 0.5s;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease;
+    
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .icono-footer {
+        font-size: 3em;
+        color: #1259c3;
+        margin: 15px 0 10px 0;
+        transition: color 0s;
+    }
+
+    .icono-footer:hover{
+        color: rgb(233, 219, 20)
+    }
+
+    .div-iconos-footer{
+        width: 20%;;
+        margin-left: 9vw;
+        margin-top: 25px;
+    }
+
+    .copyright{
+        margin-top: 30px;
+        margin-left: 5%;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+

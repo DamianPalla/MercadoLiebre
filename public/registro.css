@@ -1,0 +1,358 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*  HEADER  */
+
+header {
+    width: 100%;
+    background-color: #EAC926;
+    padding-bottom: 20px
+}
+
+.logo-y-barra-busqueda{
+    display: flex;
+    width: 100%;
+}
+
+.div-barra-busqueda{
+    width:100%;
+    display: flex;
+}
+.barra-busqueda{
+    font-size: 0.8em;
+    width: 80%;
+    height: 2.5vh;
+    border-radius: 4px;
+    border: white;
+    align-self: center;
+    margin-left: 2vw
+}
+
+.lupa-busqueda{
+    align-self: center;
+    margin-left: 5px;
+    font-size: 15px;
+    padding: 1px 1px 1px 1px
+}
+
+.div-imagenML{
+    width: 100%;
+}
+.imagenML{
+    width: 100%;
+}
+
+
+.imagenML-fixed {
+    position: fixed;
+    width: 15vw;
+    margin-left: 50vw;
+}
+
+
+.navbar-general {
+    display: none;
+}
+
+.navbar-cuenta {
+    display: none;
+}
+
+.mensaje-bienvenida {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.navegacion-general-y-cuenta{
+    margin-top: 25px;
+    display:none;
+}
+
+.navbar-general{
+    display: none;
+}
+
+.navbar-cuenta{
+    display: none;
+}
+
+
+.menu-hamburguesa {
+    color: white;
+    font-size: 2em;
+    background-color: #1259c3;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hambur {
+    text-align: center;
+}
+
+
+/*  MAIN  */
+
+.contenedor-formulario{
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+    
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-label{
+    align-items: center;
+    font-size: 1.5em;
+    padding: 20px 0 20px 0;
+    margin-top: 25px;
+    
+}
+
+input{
+    width: 35vw;
+    height: 55px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    margin: 10px 0 10px 0
+    
+}
+
+.perfil-usuario{
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.registro{
+    font-size: 1.5em;
+    margin-top: 8px;
+}
+
+.categoria-interes{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+label{
+    margin-top: 15px
+}
+
+.div-categorias-interes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+    width: 50%;
+    
+}
+
+.input-categoria{
+    display: flex;
+    font-size: 1em;
+}
+
+.boton-enviar{
+    font-size: 2.5em;
+    padding: 0 5vw 0 5vw;
+    border-radius: 5px;
+    border: #1259c3 1px solid;
+    color: white;
+    background-color: #1259c3;
+}
+
+
+/*  FOOTER  */
+
+footer {
+    background-color: white;
+    text-align: center;
+}
+
+.icono-footer {
+    font-size: 3em;
+    color: #1259c3;
+    margin: 15px 0 10px 0
+}
+
+
+
+/*  TABLETS  */
+
+
+@media (min-width: 361px) {
+
+    .div-imagenML{
+        width: 75%;
+    }
+
+    .imagenML{
+        width: 100%;
+    }
+
+    .imagenML-fixed {
+        position:fixed ;
+        width: 15vw;
+        margin-left: 40vw;
+    }
+
+    .barra-busqueda{
+        width: 50%;
+        height: 2.5vh;
+        border-radius: 4px;
+        border: white;
+        align-self: center;
+    }
+
+    .mensaje-bienvenida {
+        text-align: center;
+        font-size: 1.4em;
+    }
+
+    .navegacion-general-y-cuenta{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .menu-hamburguesa {
+        display:none
+    }
+
+    .nombre-producto {
+        display: initial;
+    }
+
+    .navbar-general {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-cuenta {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hipervinculo{
+        padding: 0 20px 0 20px ; 
+        font-size: 17px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .hambur {
+        display: none;
+    }
+
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width:45%
+    }
+
+    input{
+        width: 35vw;
+        height: 55px;
+        border-radius: 5px;
+        font-size: 1.5em;
+        
+    }
+
+}
+
+/*  ESCRITORIO  */
+
+@media (min-width: 769px) {
+
+    .div-imagenML{
+        width: 50%;
+    }
+
+    .imagenML{
+        width: 100%;
+    }
+
+    .imagenML-fixed {
+        position: fixed;
+        width: 15vw;
+        margin-left: 50vw;
+    }
+
+    .barra-busqueda{
+        width: 50%;
+        height: 2.5vh;
+        border-radius: 4px;
+        border: white;
+        align-self: center;
+    }
+
+    .mensaje-bienvenida {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .hambur {
+        display:none
+    }
+    .navegacion-general-y-cuenta{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nombre-producto {
+        display: initial;
+    }
+
+    .navbar-general {
+        display: flex;
+        display: initial;
+    }
+
+    .navbar-cuenta {
+        display: initial;
+    }
+
+    .hipervinculo{
+        padding: 0 20px 0 20px ; 
+        font-size: 17px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .menu-hamburguesa {
+        display: none;
+    }
+
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width:22%;
+    }
+
+    input{
+        width: 35vw;
+        height: 55px;
+        border-radius: 5px;
+        font-size: 2em;
+        
+    }
+}
+
+
+
+
+
+
