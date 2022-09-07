@@ -265,10 +265,6 @@ footer {
         display:none
     }
 
-    .nombre-producto {
-        
-    }
-
     .navbar-general {
         display: flex;
         flex-direction: column;
@@ -351,10 +347,6 @@ footer {
         flex-wrap: nowrap;
         justify-content: space-between;
         width: 100%;
-    }
-
-    .nombre-producto {
-        
     }
 
     .navbar-general {
